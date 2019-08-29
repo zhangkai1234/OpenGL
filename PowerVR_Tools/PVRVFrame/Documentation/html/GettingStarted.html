@@ -1,0 +1,389 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; PVRVFrame User Manual  documentation</title>
+    <link rel="stylesheet" href="_static/img_style.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/img_style.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PVRVFrame Graphical User Interface" href="GUI.html" />
+    <link rel="prev" title="Introduction" href="Introduction.html" />
+<div id="GlobalHeaderContainer">
+		<div id="GlobalHeader">
+			<div class="logo">
+				<a href="https://www.imgtec.com/developers/" target="_blank"><img src="_static/PVRlogo.png"/></a>
+            </div>
+			<div class="sitetitle"> PVRVFrame User Manual </div>
+		</div>
+</div>
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="GUI.html" title="PVRVFrame Graphical User Interface"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="Introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PVRVFrame User Manual  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GUI.html">PVRVFrame Graphical User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Extensions.html">Supported Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Limitations.html">Current Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contact.html">Contact Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">License</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="host-opengl-driver-requirements">
+<h2>Host OpenGL Driver Requirements<a class="headerlink" href="#host-opengl-driver-requirements" title="Permalink to this headline">¶</a></h2>
+<p>PVRVFrame requires hardware compatible with the underlying OpenGL
+implementation of the version of OpenGL ES being targeted. <a class="reference internal" href="#table1"><span class="std std-numref">Table 1</span></a>
+provides an indication of the requirements for emulation.</p>
+<table border="1" class="docutils" id="id3">
+<span id="table1"></span><caption><span class="caption-number">Table 1 </span><span class="caption-text">Emulation requirements</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="51%" />
+<col width="49%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Target</strong></th>
+<th class="head"><strong>Requirements</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OpenGL ES 1.1</td>
+<td>OpenGL 1.5+</td>
+</tr>
+<tr class="row-odd"><td>OpenGL ES 2.0</td>
+<td>OpenGL 2.0+</td>
+</tr>
+<tr class="row-even"><td>OpenGL ES 3.0</td>
+<td>OpenGL 3.3+</td>
+</tr>
+<tr class="row-odd"><td>OpenGL ES 3.1</td>
+<td>OpenGL 4.3+</td>
+</tr>
+<tr class="row-even"><td>OpenGL ES 3.1 + AEP</td>
+<td><p class="first">OpenGL 4.4+</p>
+<p>GL_ARB_copy_image</p>
+<p>GL_ARB_draw_buffers_blend</p>
+<p>GL_ARB_sample_shading</p>
+<p>GL_ARB_sampler_objects</p>
+<p>GL_ARB_shader_image_load_store</p>
+<p>GL_ARB_tessellation_shader</p>
+<p>GL_ARB_texture_buffer_object</p>
+<p>GL_ARB_texture_buffer_range</p>
+<p>GL_ARB_texture_cube_map_array</p>
+<p>GL_ARB_geometry_shader4</p>
+<p>GL_ARB_gpu_shader5</p>
+<p>GL_EXT_draw_buffers2</p>
+<p>GL_EXT_texture_sRGB_decode</p>
+<p class="last">GL_NV_blend_equation_advanced</p>
+</td>
+</tr>
+<tr class="row-odd"><td>OpenGL ES 3.2</td>
+<td><p class="first">OpenGL 4.4+</p>
+<p>GL_ARB_copy_image</p>
+<p>GL_ARB_draw_buffers_blend</p>
+<p>GL_ARB_draw_elements_base_vertex</p>
+<p>GL_ARB_sample_shading</p>
+<p>GL_ARB_sampler_objects</p>
+<p>GL_ARB_shader_image_load_store</p>
+<p>GL_ARB_tessellation_shader</p>
+<p>GL_ARB_texture_buffer_object</p>
+<p>GL_ARB_texture_buffer_range</p>
+<p>GL_ARB_texture_cube_map_array</p>
+<p>GL_ARB_geometry_shader4</p>
+<p>GL_ARB_gpu_shader5</p>
+<p>GL_EXT_draw_buffers2</p>
+<p>GL_EXT_texture_sRGB_decode</p>
+<p class="last">GL_NV_blend_equation_advanced</p>
+</td>
+</tr>
+<tr class="row-even"><td>OES_packed_depth_stencil</td>
+<td>EXT_packed_depth_stencil</td>
+</tr>
+<tr class="row-odd"><td>OES_framebuffer_object</td>
+<td>EXT_framebuffer object</td>
+</tr>
+<tr class="row-even"><td>OES_texture_float</td>
+<td>ARB_texture_float</td>
+</tr>
+<tr class="row-odd"><td>OES_texture_half_float</td>
+<td>ARB_texture_float</td>
+</tr>
+<tr class="row-even"><td>OES_vertex_half_float</td>
+<td>ARB_half_float_pixel</td>
+</tr>
+<tr class="row-odd"><td>OES_vertex_array_object</td>
+<td>ARB_vertex_array_object</td>
+</tr>
+<tr class="row-even"><td>EXT_shader_texture_lod</td>
+<td>ARB_shader_texture_lod</td>
+</tr>
+<tr class="row-odd"><td>IMG_multisampled_render_to_texture</td>
+<td>EXT_framebuffer_multisample</td>
+</tr>
+</tbody>
+</table>
+<p>It should also be noted that in addition to these requirements, at least
+an Intel HD3000 with proper drivers is also necessary.</p>
+</div>
+<div class="section" id="package-contents">
+<h2>Package Contents<a class="headerlink" href="#package-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#table2"><span class="std std-numref">Table 2</span></a> lists the package contents for Windows.</p>
+<table border="1" class="docutils" id="id4">
+<span id="table2"></span><caption><span class="caption-number">Table 2 </span><span class="caption-text">Package contents for Windows</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="21%" />
+<col width="79%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Content</strong></th>
+<th class="head"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>libEGL.dll</td>
+<td>PVRVFrame driver file for EGL 1.4.</td>
+</tr>
+<tr class="row-odd"><td>libGLES_CM.dll</td>
+<td>PVRVFrame driver file for OpenGL ES 1.1.</td>
+</tr>
+<tr class="row-even"><td>libGLESv2.dll</td>
+<td>PVRVFrame driver file for OpenGL ES 2.0 and higher.</td>
+</tr>
+<tr class="row-odd"><td>libEGL.lib</td>
+<td>Import (“stub”) library for use when linking against libEGL.dll.</td>
+</tr>
+<tr class="row-even"><td>libGLES_CM.lib</td>
+<td>Import (“stub”) library for use when linking against libGLES_CM.dll.</td>
+</tr>
+<tr class="row-odd"><td>libGLESv2.lib</td>
+<td>Import (“stub”) library for use when linking against libGLESv2.dll.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="linux">
+<h3>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#table3"><span class="std std-numref">Table 3</span></a> lists the package contents for Linux.</p>
+<table border="1" class="docutils" id="id5">
+<span id="table3"></span><caption><span class="caption-number">Table 3 </span><span class="caption-text">Package contents for Linux</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Content</strong></th>
+<th class="head"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>libEGL.so</td>
+<td>PVRVFrame driver file for EGL 1.4.</td>
+</tr>
+<tr class="row-odd"><td>libGLES_cm.so</td>
+<td>PVRVFrame driver file for OpenGL ES 1.1.</td>
+</tr>
+<tr class="row-even"><td>libGLESv2.so</td>
+<td>PVRVFrame driver file for OpenGL ES 2.0 and higher.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="os-x">
+<h3>OS X<a class="headerlink" href="#os-x" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="#table4"><span class="std std-numref">Table 4</span></a> lists the package contents for OS X.</p>
+<table border="1" class="docutils" id="id6">
+<span id="table4"></span><caption><span class="caption-number">Table 4 </span><span class="caption-text">Package contents for OS X</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="32%" />
+<col width="68%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Content</strong></th>
+<th class="head"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>libEGL.dylib</td>
+<td>PVRVFrame driver file for EGL 1.4.</td>
+</tr>
+<tr class="row-odd"><td>libGLES_CM.dylib</td>
+<td>PVRVFrame driver file for OpenGL ES 1.1.</td>
+</tr>
+<tr class="row-even"><td>libGLESv2.dylib</td>
+<td>PVRVFrame driver file for OpenGL ES 2.0.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="project-setup">
+<h2>Project Setup<a class="headerlink" href="#project-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Windows<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The DLL files that match the version of OpenGL ES that is to be targeted
+must be in a folder in the %PATH% environment variable or in the
+directory the application is running from. With the DLL files in place,
+a Visual Studio project can be set up as follows:</p>
+<ol class="arabic">
+<li><p class="first">Create a new Visual C project, adding source and include files as
+necessary.</p>
+</li>
+<li><p class="first">Add the following directory to the include paths of the project:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span>SDKPackage<span class="p">&gt;</span>\Builds\Include\
+</pre></div>
+</div>
+</li>
+<li><p class="first">Link against the supplied libraries. For OpenGL ES 1.1 projects, it
+is only required to link against libGLES_CM.lib. For OpenGL ES 2.0
+and higher, it is required to link against both libEGL.lib and
+libGLESv2.lib.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>Linux<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>To set up a new project to run with PVRVFrame, follow these steps:</p>
+<ol class="arabic">
+<li><p class="first">Create a new makefile, adding source and include files as necessary.</p>
+</li>
+<li><p class="first">Add the following directory to the include paths of the project:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span>SDKPackage<span class="p">&gt;</span>\Builds\Include\
+</pre></div>
+</div>
+</li>
+<li><p class="first">Link against the supplied libraries. For OpenGL ES 1.1 projects, it
+is only required to link against libGLES_CM.so. For OpenGL ES 2.0
+and higher, it is required to link against both libEGL.so and
+libGLESv2.so.</p>
+</li>
+<li><p class="first">Run the following terminal command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> LD<span class="se">\L</span>IBRARY<span class="se">\P</span>ATH<span class="o">=</span>&lt;lib folder&gt;<span class="p">;</span><span class="nv">$LD</span><span class="se">\L</span>IBRARY<span class="se">\P</span>ATH
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is possible to check that the correct versions of the libraries
+are being used and that the location of these libraries is set
+correctly. To do this, run the following command on an application built
+against the PVRVFrame libraries: ldd &lt;path to application&gt;</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Our Linux SDK installer installs stub libraries for linking
+against at build-time (in
+/PowerVR_SDK/SDK_3.5/Builds/Linux/x86_64/Lib, for example). The
+libraries have the same names as the PVRVFrame libraries (libEGL.so,
+libGLESv2.so, libGLES_CM.so), but they are separate libraries, only for
+build-time linking.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="macos">
+<h3>MacOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h3>
+<p>To set up a new project to run with PVRVFrame, follow these steps:</p>
+<ol class="arabic">
+<li><p class="first">Create a new makefile, adding source and include files as necessary.</p>
+</li>
+<li><p class="first">Add the following directory to the include paths of the project:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span>SDKPackage<span class="p">&gt;</span>\Builds\Include\
+</pre></div>
+</div>
+</li>
+<li><p class="first">Link against the supplied libraries. For OpenGL ES 1.1 projects, it
+is only required to link against libGLES_CM.dylib. For OpenGL ES 2.0
+and higher, it is required to link against both libEGL.dylib and
+libGLESv2.dylib.</p>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p class="first">Run the following terminal command:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>export DYLD_LIBRARY_PATH=<span class="p">&lt;</span>lib folder<span class="p">&gt;</span>;$DYLD_LIBRARY_PATH
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is possible to check that the correct versions of the libraries
+are being used and that the location of these libraries is set
+correctly. To do this run the following commands on an application built
+against the PVRVFrame libraries: otool –L &lt;path to application&gt;</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="GUI.html" title="PVRVFrame Graphical User Interface"
+             >next</a></li>
+        <li class="right" >
+          <a href="Introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PVRVFrame User Manual  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<div id="FooterMainContainer">
+    <div id="FooterContainer">
+		<div class="footerlogo">
+			<a href="http://www.imgtec.com" target="_blank"><img src="_static/img-footer-logo-grey.png" width="100%" height="100%" /></a>
+		</div>
+	<div class="copyright">&copy; Imagination Technologies Limited<br> All rights reserved</div>
+	</div>
+</div>
+  </body>
+</html>
