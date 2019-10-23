@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  MFCOpenglSample.cpp
+  MFCOpenglSampleDlg.cpp
+  OpenGLControl.cpp
+OpenGLControl.cpp(136): error C3861: “glClearDepth”: 找不到标识符
